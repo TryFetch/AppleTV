@@ -936,7 +936,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.wearecocoon.PutioKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getfetchapp.PutioKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos10.1;
 				SKIP_INSTALL = YES;
@@ -971,7 +971,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.wearecocoon.PutioKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getfetchapp.PutioKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos10.1;
 				SKIP_INSTALL = YES;
@@ -1004,7 +1004,7 @@
 				);
 				INFOPLIST_FILE = FetchTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.wearecocoon.Fetch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getfetchapp.Fetch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos;
@@ -1034,7 +1034,7 @@
 				);
 				INFOPLIST_FILE = FetchTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.wearecocoon.Fetch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getfetchapp.Fetch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos;
