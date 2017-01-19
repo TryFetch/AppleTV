@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="S0X-Zj-d16">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="zVv-bg-ZpQ">
+            <objects>
+                <viewController id="S0X-Zj-d16" customClass="LoginViewController" customModule="FetchTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N9q-zi-9jk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cxa-h8-vfD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y0n-Cr-kIO">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Fetch for iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xai-8A-h0e">
+                                <rect key="frame" x="926" y="316" width="804" height="91"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="9N4-Fz-NxY"/>
+                                    <constraint firstAttribute="width" constant="804" id="EMF-AN-T0G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="72"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.7725490196" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan the QR code from the &quot;Fetch TV Login&quot; screen in settings on Fetch for iOS." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqh-mm-EXf">
+                                <rect key="frame" x="926" y="448" width="698" height="91"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="698" id="mTY-B6-9UH"/>
+                                    <constraint firstAttribute="height" constant="91" id="oBs-5M-DPJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="29"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fetch-tv" translatesAutoresizingMaskIntoConstraints="NO" id="pKy-St-nrt">
+                                <rect key="frame" x="885" y="981" width="151" height="48"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="2wf-3q-EyS"/>
+                                    <constraint firstAttribute="height" constant="48" id="Exj-XP-5ZV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYo-nM-8Ms">
+                                <rect key="frame" x="926" y="591" width="424" height="75"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="bc2-km-sXh"/>
+                                    <constraint firstAttribute="width" constant="424" id="hta-5t-vWN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="29"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Don't have Fetch for iOS?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="focused">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mn8-SH-wOl" kind="presentation" identifier="showURLScreen" id="JUI-9d-a7y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MWL-If-Stp">
+                                <rect key="frame" x="167" y="183" width="627" height="627"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="627" id="SaC-hx-idQ"/>
+                                    <constraint firstAttribute="height" constant="627" id="soX-41-Jec"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hxS-u9-mev">
+                                <rect key="frame" x="448" y="465" width="64" height="64"/>
+                                <animations/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Lgt-fp-wOd"/>
+                                    <constraint firstAttribute="height" constant="64" id="ZY5-UK-005"/>
+                                </constraints>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.98823529409999999" green="0.7725490196" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pKy-St-nrt" firstAttribute="top" secondItem="MWL-If-Stp" secondAttribute="bottom" constant="171" id="3ZV-ut-aTY"/>
+                            <constraint firstItem="hxS-u9-mev" firstAttribute="top" secondItem="N9q-zi-9jk" secondAttribute="bottom" constant="465" id="4eA-TD-cQt"/>
+                            <constraint firstItem="pKy-St-nrt" firstAttribute="centerX" secondItem="y0n-Cr-kIO" secondAttribute="centerX" id="5OW-6N-rTg"/>
+                            <constraint firstItem="xai-8A-h0e" firstAttribute="top" secondItem="N9q-zi-9jk" secondAttribute="bottom" constant="316" id="680-ka-bqx"/>
+                            <constraint firstItem="Vqh-mm-EXf" firstAttribute="leading" secondItem="MWL-If-Stp" secondAttribute="trailing" constant="132" id="Dhq-AI-0MM"/>
+                            <constraint firstItem="MWL-If-Stp" firstAttribute="leading" secondItem="y0n-Cr-kIO" secondAttribute="leadingMargin" constant="147" id="Smh-dw-cDF"/>
+                            <constraint firstItem="xai-8A-h0e" firstAttribute="leading" secondItem="MWL-If-Stp" secondAttribute="trailing" constant="132" id="WnC-7i-S59"/>
+                            <constraint firstItem="Vqh-mm-EXf" firstAttribute="top" secondItem="xai-8A-h0e" secondAttribute="bottom" constant="41" id="dfg-qB-9qx"/>
+                            <constraint firstItem="Cxa-h8-vfD" firstAttribute="top" secondItem="pKy-St-nrt" secondAttribute="bottom" constant="51" id="di6-Wp-3gy"/>
+                            <constraint firstItem="OYo-nM-8Ms" firstAttribute="leading" secondItem="MWL-If-Stp" secondAttribute="trailing" constant="132" id="hAl-Xd-mWe"/>
+                            <constraint firstItem="hxS-u9-mev" firstAttribute="leading" secondItem="y0n-Cr-kIO" secondAttribute="leadingMargin" constant="428" id="j64-Fq-FdF"/>
+                            <constraint firstItem="MWL-If-Stp" firstAttribute="top" secondItem="N9q-zi-9jk" secondAttribute="bottom" constant="183" id="nQT-1t-EEa"/>
+                            <constraint firstItem="OYo-nM-8Ms" firstAttribute="top" secondItem="Vqh-mm-EXf" secondAttribute="bottom" constant="52" id="xzj-ON-dGU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityView" destination="hxS-u9-mev" id="v0t-qm-u8F"/>
+                        <outlet property="logo" destination="pKy-St-nrt" id="nW8-8I-WDY"/>
+                        <outlet property="qrView" destination="MWL-If-Stp" id="pZF-a5-wie"/>
+                        <outlet property="urlBtn" destination="OYo-nM-8Ms" id="dLB-bs-EVm"/>
+                        <segue destination="st9-gU-IYu" kind="custom" identifier="showMain" customClass="FullyReplaceSegue" customModule="FetchTV" customModuleProvider="target" id="9Yd-Mg-P30"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Cw-oy-xa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="327"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="SEg-7L-anh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="st9-gU-IYu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fB-GA-380" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964.5" y="-157"/>
+        </scene>
+        <!--URL View Controller-->
+        <scene sceneID="28S-SS-hur">
+            <objects>
+                <viewController id="Mn8-SH-wOl" customClass="URLViewController" customModule="FetchTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tHC-9g-pup"/>
+                        <viewControllerLayoutGuide type="bottom" id="OSH-DS-7BW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S89-AO-HcM">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fetch-tv" translatesAutoresizingMaskIntoConstraints="NO" id="uph-nn-NFp">
+                                <rect key="frame" x="885" y="981" width="151" height="48"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="0HD-bO-ZM6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="AoZ-YV-BwB"/>
+                                    <constraint firstAttribute="width" constant="151" id="H9g-yi-IOF"/>
+                                    <constraint firstAttribute="height" constant="48" id="mhD-Ez-zwp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To login to Fetch TV, visit the URL below in your browser and follow the instructions." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga2-uQ-6Ed">
+                                <rect key="frame" x="531" y="326" width="859" height="87"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="859" id="SSX-g8-OJc"/>
+                                    <constraint firstAttribute="height" constant="87" id="qFI-da-oMj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="29"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1z-4e-CMd">
+                                <rect key="frame" x="569" y="497" width="783" height="128"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8sr-3u-etw">
+                                    <rect key="frame" x="0.0" y="0.0" width="783" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://ftch.in/1F5u" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-Vd-ssy">
+                                            <rect key="frame" x="8" y="8" width="766" height="112"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="112" id="8M7-LV-A4H"/>
+                                                <constraint firstAttribute="width" constant="766" id="MEt-r6-byw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="72"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="mPa-Vd-ssy" firstAttribute="leading" secondItem="8sr-3u-etw" secondAttribute="leading" constant="8" id="0vJ-N4-Sk4"/>
+                                        <constraint firstItem="mPa-Vd-ssy" firstAttribute="top" secondItem="8sr-3u-etw" secondAttribute="top" constant="8" id="6F1-Gt-pRj"/>
+                                        <constraint firstAttribute="bottom" secondItem="mPa-Vd-ssy" secondAttribute="bottom" constant="8" id="Ocp-bQ-Cpw"/>
+                                        <constraint firstAttribute="trailing" secondItem="mPa-Vd-ssy" secondAttribute="trailing" constant="9" id="rby-3u-xzh"/>
+                                    </constraints>
+                                </view>
+                                <animations/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.7725490196" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Zxo-pU-edL"/>
+                                    <constraint firstAttribute="width" constant="783" id="lvD-fX-tJ8"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with your browser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLX-WQ-c4f">
+                                <rect key="frame" x="565" y="203" width="791" height="99"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="791" id="5lx-gO-6Qc"/>
+                                    <constraint firstAttribute="height" constant="99" id="VFb-gc-7VQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="72"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.7725490196" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uph-nn-NFp" firstAttribute="centerX" secondItem="S89-AO-HcM" secondAttribute="centerX" id="2Pe-bh-4OY"/>
+                            <constraint firstItem="hLX-WQ-c4f" firstAttribute="centerX" secondItem="S89-AO-HcM" secondAttribute="centerX" id="6t5-sj-40u"/>
+                            <constraint firstItem="OSH-DS-7BW" firstAttribute="top" secondItem="uph-nn-NFp" secondAttribute="bottom" constant="51" id="7Oh-n3-PSw"/>
+                            <constraint firstItem="hLX-WQ-c4f" firstAttribute="top" secondItem="tHC-9g-pup" secondAttribute="bottom" constant="203" id="ERe-jG-jcX"/>
+                            <constraint firstItem="p1z-4e-CMd" firstAttribute="top" secondItem="Ga2-uQ-6Ed" secondAttribute="bottom" constant="84" id="Nqd-Hd-CX8"/>
+                            <constraint firstItem="p1z-4e-CMd" firstAttribute="centerX" secondItem="S89-AO-HcM" secondAttribute="centerX" id="VgM-gD-i1B"/>
+                            <constraint firstItem="Ga2-uQ-6Ed" firstAttribute="centerX" secondItem="S89-AO-HcM" secondAttribute="centerX" id="W8t-9B-SkC"/>
+                            <constraint firstItem="Ga2-uQ-6Ed" firstAttribute="top" secondItem="hLX-WQ-c4f" secondAttribute="bottom" constant="24" id="lK5-Ym-GR5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="mPa-Vd-ssy" id="Q8f-wO-X3x"/>
+                        <segue destination="st9-gU-IYu" kind="custom" identifier="showMain" customClass="FullyReplaceSegue" customModule="FetchTV" customModuleProvider="target" id="Wn0-fA-yXP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqa-ra-PDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2642" y="853"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fetch-tv" width="437" height="136"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Yd-Mg-P30"/>
+    </inferredMetricsTieBreakers>
+</document>

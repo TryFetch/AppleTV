@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView" customModule="FetchTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aas-2B-2zH">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PpQ-LR-YiL">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Gsm-hR-5zI">
+                                <rect key="frame" x="928" y="508" width="64" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="J9b-2a-i80"/>
+                                    <constraint firstAttribute="width" constant="64" id="uIX-3K-6Tc"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="Gsm-hR-5zI" firstAttribute="centerY" secondItem="PpQ-LR-YiL" secondAttribute="centerY" id="SYg-qM-Jk4"/>
+                            <constraint firstItem="Gsm-hR-5zI" firstAttribute="centerX" secondItem="PpQ-LR-YiL" secondAttribute="centerX" id="yFl-ei-eG5"/>
+                        </constraints>
+                    </view>
+                    <animations/>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aas-2B-2zH" secondAttribute="trailing" id="bRG-F8-i48"/>
+                <constraint firstAttribute="bottom" secondItem="aas-2B-2zH" secondAttribute="bottom" id="pzc-xA-t7r"/>
+                <constraint firstItem="aas-2B-2zH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xdJ-6c-nZR"/>
+                <constraint firstItem="aas-2B-2zH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zyO-Be-OZo"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="Gsm-hR-5zI" id="oB1-Jq-q5y"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (3.5.1)
+  - AlamofireImage (2.5.0):
+    - Alamofire (~> 3.5)
+  - Downpour (0.1.0)
+  - KeychainAccess (2.4.0)
+  - Realm (2.1.2):
+    - Realm/Headers (= 2.1.2)
+  - Realm/Headers (2.1.2)
+  - RealmSwift (2.1.2):
+    - Realm (= 2.1.2)
+  - SwiftyJSON (2.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.5)
+  - AlamofireImage (~> 2.5)
+  - Downpour (~> 0.1.0)
+  - KeychainAccess (~> 2.4)
+  - Realm
+  - RealmSwift
+  - SwiftyJSON (~> 2.4)
+
+SPEC CHECKSUMS:
+  Alamofire: 0dfba1184a543e2aa160f4e39cac4e8aba48d223
+  AlamofireImage: 2d34936e5201270bb17a316a786e90e83b4a249d
+  Downpour: 7acc08bfd87104fd2d562587436a8606937c6917
+  KeychainAccess: c2a71459af5bddf720a51806046a598500976c04
+  Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
+  RealmSwift: 17d6ee30b6f9df86364408c2197492e33bfea567
+  SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
+
+PODFILE CHECKSUM: 1a45382d33290c48d58a76f9269907eb4290227a
+
+COCOAPODS: 1.1.1

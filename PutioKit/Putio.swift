@@ -1,0 +1,52 @@
+//
+//  Putio.swift
+//  Fetch
+//
+//  Created by Stephen Radford on 11/09/2015.
+//  Copyright © 2015 Cocoon Development Ltd. All rights reserved.
+//
+
+import Foundation
+import KeychainAccess
+#if os(iOS)
+import RealmSwift
+#endif
+
+public class Putio {
+    
+    /// The reference to the Put.io API
+    public static let api = "https://api.put.io/v2/"
+    
+    /// The client ID used to authenticate with Put.io
+    public static let clientId = 2023
+    
+    /// The keychain we're using
+    public static let keychain = Keychain(service: "uk.co.wearecocoon.fetch")
+    
+    #if os(iOS)
+    /// The shared realm instance
+    public static let realm = try! Realm()
+    #endif
+    
+    /// The access token stored in keychain after we logged in
+    public static var accessToken: String? {
+        get {
+            return keychain["access_token"]
+        }
+    }
+    
+    public static let sharedInstance = Putio()
+    
+    public var delegate: PutioDelegate?
+    
+    public static let secret = "1E6p8Mlh9PfGrtZH0UUNArC252FX74FO"
+    
+    public static let accent = UIColor(red:0.98, green:0.77, blue:0.21, alpha:1)
+    
+    public class func networkActivityIndicatorVisible(yn: Bool) {
+        #if os(iOS)
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = yn
+        #endif
+    }
+    
+}
