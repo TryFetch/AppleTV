@@ -35,9 +35,12 @@ class MoviesCollectionViewController: UICollectionViewController {
         collectionView?.remembersLastFocusedIndexPath = true
     }
     
+    override func indexPathForPreferredFocusedViewInCollectionView(collectionView: UICollectionView) -> NSIndexPath? {
+        return focusPath
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
         showNoMediaMessageIfRequired()
         if !collectionView!.focused {
             focusPath = NSIndexPath(forItem: 0, inSection: 0)
@@ -50,10 +53,6 @@ class MoviesCollectionViewController: UICollectionViewController {
             focusPath = next
         }
         
-    }
-    
-    override func indexPathForPreferredFocusedViewInCollectionView(collectionView: UICollectionView) -> NSIndexPath? {
-        return focusPath
     }
     
     // MARK: - Sync
