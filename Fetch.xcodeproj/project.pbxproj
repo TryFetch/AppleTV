@@ -13,6 +13,7 @@
 		281AE82D1E30F97300B0A90B /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		281AE82F1E30FA3300B0A90B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE82E1E30FA3300B0A90B /* File.swift */; };
 		281AE8311E30FA3800B0A90B /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE8301E30FA3800B0A90B /* Files.swift */; };
+		281AE8331E31051C00B0A90B /* Keychain + Hotfix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE8321E31051C00B0A90B /* Keychain + Hotfix.swift */; };
 		282A73351BC99CD900F87877 /* TVEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282A73341BC99CD900F87877 /* TVEpisode.swift */; };
 		283324491BA80447008B2B20 /* URLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283324481BA80447008B2B20 /* URLViewController.swift */; };
 		2835B3FA1BC9ADC70069E011 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835B3F91BC9ADC70069E011 /* TVShow.swift */; };
@@ -121,6 +122,7 @@
 		281AAB411BF949D8000FE063 /* FocusableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusableText.swift; sourceTree = "<group>"; };
 		281AE82E1E30FA3300B0A90B /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		281AE8301E30FA3800B0A90B /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		281AE8321E31051C00B0A90B /* Keychain + Hotfix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Keychain + Hotfix.swift"; sourceTree = "<group>"; };
 		2826E7D11BF66FBF00B90B03 /* FetchTV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FetchTV.entitlements; sourceTree = "<group>"; };
 		2826E7D21BF66FDC00B90B03 /* TopShelf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TopShelf.entitlements; sourceTree = "<group>"; };
 		282A73341BC99CD900F87877 /* TVEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVEpisode.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				28B612D61BCAE59700AFD22B /* String+TorrentName.swift */,
+				281AE8321E31051C00B0A90B /* Keychain + Hotfix.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -583,7 +586,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -736,6 +739,7 @@
 				282A73351BC99CD900F87877 /* TVEpisode.swift in Sources */,
 				287F15D01BA3203F00334AD6 /* Putio.swift in Sources */,
 				281AE8311E30FA3800B0A90B /* Files.swift in Sources */,
+				281AE8331E31051C00B0A90B /* Keychain + Hotfix.swift in Sources */,
 				28C655B61BB8588900E5BABB /* PutioDelegate.swift in Sources */,
 				2835B4071BC9B2BC0069E011 /* Movie.swift in Sources */,
 				28E0B0241BCD80FE006886D8 /* TVShowDelegate.swift in Sources */,
@@ -993,7 +997,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				CODE_SIGN_ENTITLEMENTS = FetchTV/FetchTV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1024,7 +1027,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				CODE_SIGN_ENTITLEMENTS = FetchTV/FetchTV.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Cocoon Development Ltd (B598AEF9ZM)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;

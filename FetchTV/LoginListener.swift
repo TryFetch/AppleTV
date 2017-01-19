@@ -62,7 +62,7 @@ class LoginListener: NSObject {
                     let json = JSON(result)
                     
                     if let accessToken = json["access_token"].string {
-                        Putio.keychain["access_token"] = accessToken
+                        Putio.keychain.updateIfNeeded("access_token", value: accessToken)
                         self.destroyToken()
                         
                         self.timer?.invalidate()
